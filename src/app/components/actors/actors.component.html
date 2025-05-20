@@ -1,0 +1,14 @@
+<!-- src/app/actors/actors.component.html -->
+
+<div class="container content-wrapper">
+@for (actor of actors; track actors){
+  <div class="card">
+    <img src="{{ imageUrl(actor.image) }}" alt="{{ actor.name }}" class="img-fluid" />
+    <div class="card-body">
+      <h5 class="card-title">
+        {{ actor.name }}
+      </h5>
+    </div>
+  </div>
+  }
+</div>
